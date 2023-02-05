@@ -1,0 +1,95 @@
+.timer{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.step_counter {
+  margin-top: 20px;
+  height: fit-content;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.gameboard {
+  height: fit-content;
+  display: flex;
+  background-color: rgb(189, 184, 184);
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.start_button{
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.base {
+  width: 100px;
+  height: 10px;
+  background-color: rgb(64, 162, 241);
+}
+
+.control_panel{
+  margin: auto;
+  height: 50px;
+  width: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.plate {
+  width: 80px;
+  height: 15px;
+  background-color: black;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+  pad: 2px;
+}
+
+.tower {
+  height: fit-content;
+  width: fit-content;
+  margin: 20px;
+  position: relative;
+}
+
+
+/* .plate-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  bottom: 10px;
+  opacity: 100%;
+} */
+
+.danda {
+    z-index: 9;
+    width: 10px;
+    height: 200px;
+    background-color: rgb(236, 128, 40);
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+}

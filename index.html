@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="initialize()">
+    <script src="script.js"></script>
+
+    <div class="control_panel">
+      <button onclick="undo()" id="undo_btn" disabled>Undo</button>
+      <button id="decrease_plates_btn" onclick="decrease_plates()">-</button>
+      <div id="plates_number"></div>
+      <button id="increase_plates_btn" onclick="increase_plates()">+</button>
+      <button onclick="redo()" id="redo_btn" disabled>Redo</button>
+    </div>
+    <div class="start_button">
+      <button onclick="start_game()" id="start_btn" class="start_button">Start</button>
+      <button onclick="restart_game()" id="restart_btn" class="restart_button" disabled>Restart</button>
+    </div>
+
+    <div class="gameboard" id = "gameboard">
+      <div class="tower">
+        <div id="danda-container" class = "danda-container" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <div class="danda" id = "danda1"
+          ondragstart="startdrag(event)" ondrop="return false;">
+          </div>
+        </div>
+        
+        <div class="base"></div>
+      </div>
+
+
+      <div class="tower">
+        <div id="danda-container" class = "danda-container" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <div class="danda" id = "danda2"
+          ondragstart="startdrag(event)" ondrop="return false;">
+          </div>
+        </div>
+        
+        <div class="base"></div>
+      </div>
+
+      <div class="tower">
+        <div id="danda-container" class = "danda-container" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <div class="danda" id = "danda3"
+          ondragstart="startdrag(event)" ondrop="return false;">
+          </div>
+        </div>
+        
+        <div class="base"></div>
+      </div>
+
+    </div>
+
+    <div class="step_counter" >
+      <div id="step_counter"></div>
+      <div>Counter</div>
+      <div id="move_list"></div>
+    </div>
+
+    <div class="timer">Game ends in <span id="time">02:00</span> minutes!</div>
+  </body>
+</html>
